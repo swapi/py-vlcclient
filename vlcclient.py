@@ -127,9 +127,21 @@ class VLCClient(object):
         """Pause playing"""
         return self._send_command("pause")
 
+    def is_playing(self):
+        """True if a stream plays, False otherwise."""
+        return True if self._send_command("is_playing")[0] == '1' else False
+
     def stop(self):
         """Stop stream"""
         return self._send_command("stop")
+
+    def fastforward(self):
+        """fastforward stream"""
+        return self._send_command("fastforward")
+
+    def get_time(self):
+        """get time"""
+        return self._send_command("get_time")
 
     def rewind(self):
         """Rewind stream"""
