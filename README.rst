@@ -50,6 +50,7 @@ generic
  * help
  * status
  * info
+ * get-time
 
 playlists and controls
 ----------------------
@@ -64,6 +65,7 @@ playlists and controls
  * next
  * prev
  * clear
+ * fast-forward
 
 volume
 ------
